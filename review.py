@@ -1,11 +1,11 @@
 import pandas as pd
 
 def obtener_datos():
-    df = pd.read_csv('Processed_interactions.csv')
+    df = pd.read_csv('datasets/Processed_interactions.csv')
     return df
 
 def obtener_nombre_receta(id_receta):
-    df = pd.read_csv('Processed_recipes.csv')
+    df = pd.read_csv('datasets/Processed_recipes.csv')
 
     if df is not None:
         receta = df[df['id'] == id_receta]
